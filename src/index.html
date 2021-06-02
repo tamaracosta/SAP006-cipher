@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  
   <div id="root">
-    <h1>Hello world!</h1>
+    <header>
+      <h1 id="titulo-principal">DENUNSÉDIO</h1>
+      <h2>Seja bem vindo ao DENUNSÉDIO, onde você denuncia assédio sexual ou violência contra você ou outra pessoa</h2>
+    </header>
+  
+    <form id="formulario" action="">
+      <h3>Por gentileza, preencha este formulário</h3>
+      <div>
+        <label for="nome">Nome Completo</label>
+        <input id="nome" placeholder="Digite o seu nome" type="text" />
+      </div>
+
+      <div>
+        <label for="tel1">Telefone de Contato 1</label>
+        <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="text" />
+      </div>
+      <div>
+        <label for="tel2">Telefone de Contato 2</label>
+        <input id="tel2" placeholder="(xx)xxxxx-xxxx" type="text" />
+      </div>
+      <div>
+        <label for="logradouro">Logradouro</label>
+        <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
+      </div>
+      <div>
+        <label for="numero">N°</label>
+        <input id="numero" placeholder="Digite o número" type="number" />
+      </div>
+      <div>
+        <label for="bairro">Bairro</label>
+        <input id="bairro" placeholder="Digite seu bairro" type="text" />
+      </div>
+      <div>
+        <label for="denuncia">Denúncia*</label>
+        <textarea name="denuncia" id="denuncia" cols="80" rows="20" required></textarea>
+      </div>
+   
+
+
+    <div class="escolha-chave">
+      <label for="seleciona-chave">Escolha uma chave criptografada de 0 a 26</label>
+      <input id="seleciona-chave" name="quantidade" type="number" value="0" step="any" min="0" max="26" />
   </div>
+  <br>
+    
+
+  <div class="botao">
+    <button id="botao-criptografar" type="button">Criptografar</button>
+  </div>
+
+
+  <div>
+    <label for="mensagem-criptografada">Mensagem após criptografar</label>
+    <textarea name="mensagem-criptografada" id="mensagem-criptografada" cols="80" rows="20" required></textarea>
+  </div> 
+
+    <div class="botao">
+      <button id="botao-enviar" type="button">Enviar</button>
+    </div>
+
+  </form>
+
+
+
   <script src="index.js" type="module"></script>
 </body>
+
 </html>
