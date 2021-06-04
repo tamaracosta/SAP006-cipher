@@ -86,3 +86,28 @@ input:focus, textarea:focus {
     color: rgb(245, 99, 179);
 }
 
+#botao-descriptografar {
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(245, 99, 179);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#botao-descriptografar:hover {
+    background-color: rgb(245, 99, 179);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+    
+}
+
