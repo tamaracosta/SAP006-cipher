@@ -18,86 +18,87 @@
       <h2>Seja bem vindo ao DENUNSÉDIO, onde você denuncia assédio sexual ou violência contra você ou outra pessoa</h2>
     </header>
 
-    <form id="formulario" action="">
-      <h3>Por gentileza, preencha este formulário</h3>
-      <div>
-        <label for="nome">Nome Completo</label>
-        <input id="nome" placeholder="Digite o seu nome" type="text" />
-      </div>
 
-      <div>
-        <label for="tel1">Telefone de Contato </label>
-        <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="text" />
-      </div>
-      <div>
-        <label for="logradouro">Logradouro</label>
-        <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
-      </div>
-      <div>
-        <label for="numero">N°</label>
-        <input id="numero" placeholder="Digite o número" type="number" />
-      </div>
-      <div>
-        <label for="bairro">Bairro</label>
-        <input id="bairro" placeholder="Digite seu bairro" type="text" />
-      </div>
-      <div>
-        <label for="denuncia">Denúncia*</label>
-        <textarea name="denuncia" id="denuncia" cols="80" rows="20" required></textarea>
-      </div>
-
-
-
-      <div class="escolha-chave">
-        <label for="seleciona-chave">Escolha uma chave criptografada de 0 a 26</label>
-        <input id="seleciona-chave" name="quantidade" type="number" value="3" step="any" min="0" max="26" />
-      </div>
-      <br>
-
-      <section class="container">
-
-
-
-
-        <div class="mensagem">
-
-          <div class="botao">
-            <button id="botao-criptografar" type="button" onclick="criptografar()">Criptografar</button>
-          </div>
-          <div><label for="mensagem-criptografada">Mensagem após criptografar</label></div>
-          <textarea name="mensagem-criptografada" id="mensagem-criptografada" cols="50" rows="20" required></textarea>
-
+    <section class="form">
+      <form id="formulario" action="">
+        <h3>Por gentileza, preencha este formulário</h3>
+        <div>
+          <label for="nome">Nome Completo</label>
+          <input id="nome" placeholder="Digite o seu nome" type="text" />
         </div>
 
-
-
-
-        <div class="mensagem">
-
-          <div class="botao">
-            <button id="botao-descriptografar" type="button" onclick="descriptografar()">Descriptografar</button>
-          </div>
-          <div><label for="mensagem-descriptografada">Mensagem após descriptografar</label></div>
-          <textarea name="mensagem-descriptografada" id="mensagem-descriptografada" cols="50" rows="20"
-            required></textarea>
-
+        <div>
+          <label for="tel1">Telefone de Contato </label>
+          <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="text" />
         </div>
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
+        </div>
+        <div>
+          <label for="numero">N°</label>
+          <input id="numero" placeholder="Digite o número" type="number" />
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input id="bairro" placeholder="Digite seu bairro" type="text" />
+        </div>
+        <div>ou</div>
+        <div id="denunciaAnonima">
+          <label for="anonima">Denúncia Anônima</label>
+          <input type="checkbox" name="anonima" id="anonima">
+        </div>
+      </form>
+    </section>
 
+    <div>
+      <!-- <label for="denuncia">Denúncia*</label> -->
+     <h3>Denúncia</h3> 
+      <textarea name="denuncia" id="denuncia" cols="80" rows="20" required></textarea>
+    </div>
+
+
+
+    <div class="escolha-chave">
+      <label for="seleciona-chave">Escolha uma chave criptografada de 1 a 25</label>
+      <input id="seleciona-chave" name="quantidade" type="number" value="1" step="any" min="1" max="35" />
+    </div>
+    <br>
+
+    <section class="container">
+
+      <div class="mensagem">
+        <div class="botao">
+          <button id="botao-criptografar" type="button">Criptografar</button>
+        </div>
+        <div><label for="mensagem-criptografada">Mensagem após criptografar</label></div>
+        <textarea name="mensagem-criptografada" id="mensagem-criptografada" cols="50" rows="20" required></textarea>
+      </div>
+
+      <div class="mensagem">
+        <div class="botao">
+          <button id="botao-descriptografar" type="button">Descriptografar</button>
+        </div>
+        <div><label for="mensagem-descriptografada">Mensagem após descriptografar</label></div>
+        <textarea name="mensagem-descriptografada" id="mensagem-descriptografada" cols="50" rows="20"
+          required></textarea>
+      </div>
+    </section>
   </div>
-  </section>
+  
 
 
 
 
   <div class="botao">
-    <button id="botao-enviar" type="button">Enviar</button>
+    <button id="botao-enviar" onclick="enviar()" type="button">Enviar</button>
   </div>
 
-  </form>
+ 
 
 
   <script src="index.js" type="module"></script>
-  <script src="cipher.js"></script>
+
 </body>
 
 </html>
