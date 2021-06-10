@@ -12,13 +12,11 @@
 
 <body>
 
-
   <div id="root">
     <header>
       <h1 id="titulo-principal">DENUNSÉDIO</h1>
       <h2>Seja bem vindo ao DENUNSÉDIO, onde você denuncia assédio sexual ou violência contra você ou outra pessoa</h2>
     </header>
-
 
     <form id="formulario" action="">
       <h3>Por gentileza, preencha este formulário</h3>
@@ -31,18 +29,22 @@
         <label for="tel1">Telefone de Contato </label>
         <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="number" />
       </div>
+
       <div>
         <label for="logradouro">Logradouro</label>
         <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
       </div>
+
       <div>
         <label for="numero">N°</label>
         <input id="numero" placeholder="Digite o número" type="number" />
       </div>
+
       <div>
         <label for="bairro">Bairro</label>
         <input id="bairro" placeholder="Digite seu bairro" type="text" />
       </div>
+
       <div>ou</div>
       <div id="denunciaAnonima">
         <label for="anonima">Denúncia Anônima</label>
@@ -50,20 +52,18 @@
       </div>
     </form>
 
-
     <div>
       <h3>Denúncia</h3>
       <textarea name="denuncia" id="denuncia" cols="80" rows="20" required></textarea>
     </div>
 
     <div class="escolha-chave">
-      <label for="seleciona-chave">Escolha uma chave criptografada de 1 a 50</label>
-      <input id="seleciona-chave" name="quantidade" type="number" value="1" step="any" min="1" max="50" />
+      <label for="seleciona-chave">Escolha uma chave criptografada (positiva ou negativa)</label>
+      <input id="seleciona-chave" name="quantidade" type="number" value="1" step="any" />
     </div>
     <br>
-
+    
     <section class="container">
-
       <div class="mensagem">
         <div class="botao">
           <button id="botao-criptografar" type="button">Criptografar</button>
@@ -81,29 +81,23 @@
           required></textarea>
       </div>
     </section>
-  </div>
-
-
-
-
-
-  <div class="botao">
-    <button id="botao-enviar" onclick="enviar()" type="button">Enviar</button>
-  </div>
-
-  <footer>
-    <div id="footer">
-      <p>Desenvolvido por Tamara Costa</p>
-      <a href="https://www.linkedin.com/in/tamaradscosta/" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/tamaracosta" target="_blank"><i id="github" class="fab fa-github-square"></i></a>
-      <a href="https://www.instagram.com/programadora_do_futuro/" target="_blank"><i id="instagram" class="fab fa-instagram"></i></a>
+    
+    <div class="botao">
+      <button id="botao-enviar" onclick="enviar()" type="button">Enviar</button>
     </div>
 
+    <footer>
+      <div id="footer">
+        <p>Desenvolvido por Tamara Costa</p>
+        <a href="https://www.linkedin.com/in/tamaradscosta/" target="_blank"><i id="linkedin"
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/tamaracosta" target="_blank"><i id="github" class="fab fa-github-square"></i></a>
+        <a href="https://www.instagram.com/programadora_do_futuro/" target="_blank"><i id="instagram"
+            class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
 
-   
-  </footer>
-
-
+  </div>
 
   <script src="index.js" type="module"></script>
 
