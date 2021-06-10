@@ -26,27 +26,28 @@ function criptografar(offset, mensagem) {
     letraAtual = mensagem[i]
     codigoASCDaLetra = letraAtual.charCodeAt()
 
-    //CODIFICAR OFFSET NEGATIVO LETRA MAIUSCULA
-    if (offset < 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
-      novoCodigo = (((codigoASCDaLetra - 90 + 26 + (offset)) % 26) + 90)
-      letraCriptografada = String.fromCharCode(novoCodigo)
-      saida += letraCriptografada
 
     //CODIFICAR OFFSET POSITIVO LETRA MAIUSCULA
-    } else if (offset > 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
-      novoCodigo = (((codigoASCDaLetra - 65 + offset) % 26) + 65)
-      letraCriptografada = String.fromCharCode(novoCodigo)
-      saida += letraCriptografada
-
-    // CODIFICAR OFFSET NEGATIVO LETRA MINUSCULA
-    } else if (offset < 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
-      novoCodigo = (((codigoASCDaLetra - 122 + 26 + (offset)) % 26) + 122)
-      letraCriptografada = String.fromCharCode(novoCodigo)
-      saida += letraCriptografada
+   if (offset > 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
+    novoCodigo = (((codigoASCDaLetra - 65 + offset) % 26) + 65)
+    letraCriptografada = String.fromCharCode(novoCodigo)
+    saida += letraCriptografada
 
     // CODIFICAR OFFSET POSITIVO LETRA MINUSCULA
-    } else if (offset > 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
-      novoCodigo = (((codigoASCDaLetra - 97 + offset) % 26) + 97)
+  } else if (offset > 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
+    novoCodigo = (((codigoASCDaLetra - 97 + offset) % 26) + 97)
+    letraCriptografada = String.fromCharCode(novoCodigo)
+    saida += letraCriptografada
+
+    //CODIFICAR OFFSET NEGATIVO LETRA MAIUSCULA 
+  }else if (offset < 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
+      novoCodigo = (((codigoASCDaLetra - 90 + (offset)) % 26) + 90)
+      letraCriptografada = String.fromCharCode(novoCodigo)
+      saida += letraCriptografada
+
+      // CODIFICAR OFFSET NEGATIVO LETRA MINUSCULA 
+    } else if (offset < 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
+      novoCodigo = (((codigoASCDaLetra - 122 + (offset)) % 26) + 122)
       letraCriptografada = String.fromCharCode(novoCodigo)
       saida += letraCriptografada
 
@@ -57,7 +58,6 @@ function criptografar(offset, mensagem) {
   }
   return saida;
 }
-
 
 function descriptografar(offset, mensagem) {
   let letraAtual;
@@ -73,7 +73,7 @@ function descriptografar(offset, mensagem) {
   if (typeof mensagem !== "string") {
     throw TypeError('A Mensagem precisa ser texto')
   }
-
+  
   if (offset < 0) {
     offset = 26 + offset;
   }
@@ -82,13 +82,28 @@ function descriptografar(offset, mensagem) {
     letraAtual = mensagem[i]
     codigoASCDaLetra = letraAtual.charCodeAt()
 
-    if (codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
+
+    // //DECODIFICAR OFFSET POSITIVO LETRA MAIÚSCULA 
+    if (offset > 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
       novoCodigo = (((codigoASCDaLetra + 65 - offset) % 26) + 65)
       letraCriptografada = String.fromCharCode(novoCodigo)
       saida += letraCriptografada
 
-    } else if (codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
+      // //DECODIFICAR OFFSET POSITIVO LETRA MINÚSCULA
+    } else if (offset > 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
       novoCodigo = 122 - ((122 - codigoASCDaLetra + offset) % 26);
+      letraCriptografada = String.fromCharCode(novoCodigo)
+      saida += letraCriptografada
+
+      // //DECODIFICAR OFFSET NEGATIVO LETRA MAIUSCULA
+    } else if (offset < 0 && codigoASCDaLetra >= 65 && codigoASCDaLetra <= 90) {
+      novoCodigo = (((codigoASCDaLetra - 65 - (offset)) % 26) + 65)
+      letraCriptografada = String.fromCharCode(novoCodigo)
+      saida += letraCriptografada
+
+      // //DECODIFICAR OFFSET NEGATIVO LETRA MINUSCULA 
+    } else if (offset < 0 && codigoASCDaLetra >= 97 && codigoASCDaLetra <= 122) {
+      novoCodigo = (((codigoASCDaLetra - 97 - (offset)) % 26) + 97)
       letraCriptografada = String.fromCharCode(novoCodigo)
       saida += letraCriptografada
 
