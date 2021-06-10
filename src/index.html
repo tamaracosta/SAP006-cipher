@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
@@ -19,49 +20,45 @@
     </header>
 
 
-    <section class="form">
-      <form id="formulario" action="">
-        <h3>Por gentileza, preencha este formulário</h3>
-        <div>
-          <label for="nome">Nome Completo</label>
-          <input id="nome" placeholder="Digite o seu nome" type="text" />
-        </div>
+    <form id="formulario" action="">
+      <h3>Por gentileza, preencha este formulário</h3>
+      <div>
+        <label for="nome">Nome Completo</label>
+        <input id="nome" placeholder="Digite o seu nome" type="text" />
+      </div>
 
-        <div>
-          <label for="tel1">Telefone de Contato </label>
-          <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="text" />
-        </div>
-        <div>
-          <label for="logradouro">Logradouro</label>
-          <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
-        </div>
-        <div>
-          <label for="numero">N°</label>
-          <input id="numero" placeholder="Digite o número" type="number" />
-        </div>
-        <div>
-          <label for="bairro">Bairro</label>
-          <input id="bairro" placeholder="Digite seu bairro" type="text" />
-        </div>
-        <div>ou</div>
-        <div id="denunciaAnonima">
-          <label for="anonima">Denúncia Anônima</label>
-          <input type="checkbox" name="anonima" id="anonima">
-        </div>
-      </form>
-    </section>
+      <div>
+        <label for="tel1">Telefone de Contato </label>
+        <input id="tel1" placeholder="(xx)xxxxx-xxxx" type="number" />
+      </div>
+      <div>
+        <label for="logradouro">Logradouro</label>
+        <input id="logradouro" placeholder="Digite sua rua/avenida" type="text" />
+      </div>
+      <div>
+        <label for="numero">N°</label>
+        <input id="numero" placeholder="Digite o número" type="number" />
+      </div>
+      <div>
+        <label for="bairro">Bairro</label>
+        <input id="bairro" placeholder="Digite seu bairro" type="text" />
+      </div>
+      <div>ou</div>
+      <div id="denunciaAnonima">
+        <label for="anonima">Denúncia Anônima</label>
+        <input type="checkbox" name="anonima" id="anonima">
+      </div>
+    </form>
+
 
     <div>
-      <!-- <label for="denuncia">Denúncia*</label> -->
-     <h3>Denúncia</h3> 
+      <h3>Denúncia</h3>
       <textarea name="denuncia" id="denuncia" cols="80" rows="20" required></textarea>
     </div>
 
-
-
     <div class="escolha-chave">
-      <label for="seleciona-chave">Escolha uma chave criptografada de 1 a 25</label>
-      <input id="seleciona-chave" name="quantidade" type="number" value="1" step="any" min="1" max="35" />
+      <label for="seleciona-chave">Escolha uma chave criptografada de 1 a 50</label>
+      <input id="seleciona-chave" name="quantidade" type="number" value="1" step="any" min="1" max="50" />
     </div>
     <br>
 
@@ -85,7 +82,7 @@
       </div>
     </section>
   </div>
-  
+
 
 
 
@@ -94,7 +91,18 @@
     <button id="botao-enviar" onclick="enviar()" type="button">Enviar</button>
   </div>
 
- 
+  <footer>
+    <div id="footer">
+      <p>Desenvolvido por Tamara Costa</p>
+      <a href="https://www.linkedin.com/in/tamaradscosta/" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tamaracosta" target="_blank"><i id="github" class="fab fa-github-square"></i></a>
+      <a href="https://www.instagram.com/programadora_do_futuro/" target="_blank"><i id="instagram" class="fab fa-instagram"></i></a>
+    </div>
+
+
+   
+  </footer>
+
 
 
   <script src="index.js" type="module"></script>
