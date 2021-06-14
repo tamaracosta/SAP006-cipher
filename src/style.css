@@ -111,7 +111,7 @@ input:focus, textarea:focus {
 
 .container {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 #linkedin, #github, #instagram {

@@ -16,7 +16,6 @@ function descriptografar() {
     const offset = Number(document.getElementById("seleciona-chave").value);
     const saida = cipher.decode(offset, mensagem);
 
-
     document.getElementById("mensagem-descriptografada").innerHTML = saida
 }
 
