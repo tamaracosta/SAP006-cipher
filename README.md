@@ -1,5 +1,5 @@
 # DENUNSÉDIO
-## Projeto Cifra de César
+## Projeto usando Cifra de César
 Cifra de César é uma técnica de criptografia onde uma letra é substituída por outra. Esse é o primeiro projeto desenvolvido para o bootcamp da Laboratoria.
 
 ## Sobre o site DENUNSÉDIO
@@ -11,20 +11,21 @@ Devido as perseguições que muitas mulheres sofrem com instalações desconheci
 ## Inspiração da Paleta de Cores
 ![Paleta de Cores](https://raw.githubusercontent.com/tamaracosta/SAP006-cipher/0a0c1d9b5f76b656320fc8015a9be004bd6499f6/src/img/paleta.png)
 
-- [Link do protótipo de alta fidelidade](https://www.figma.com/file/ccBQV9ueAEoTGMQ45YDX44/Projeto-Cifra-de-C%C3%A9sar?node-id=0%3A1)
+- [Link do protótipo de alta fidelidade realizado no FIGMA](https://www.figma.com/file/ccBQV9ueAEoTGMQ45YDX44/Projeto-Cifra-de-C%C3%A9sar?node-id=0%3A1)
 
 ## Como funciona?
-O usuário(a) pode colocar seus dados ou denunciar de forma anônima outra vítima, escrevendo a mensagem e escolhendo a chave criptografada.
+O usuário(a) pode colocar seus dados ou denunciar de forma anônima outra vítima, escrevendo a mensagem e escolhendo a chave criptografada, tanto positiva quanto negativa.
+
 ![GIF Denunsédio](https://raw.githubusercontent.com/tamaracosta/SAP006-cipher/main/src/video-denunsedio.gif)
 
 ### Criptografia e Descriptografia
-- Letras Minúsculas e Maiúsculas
-- Deslocamento(offset) positivo e negativo
+- Letras Minúsculas e Maiúsculas;
+- Deslocamento(offset) positivo e negativo;
 - Mantém espaços e caracteres especiais
 
 ### Tecnologias Utilizadas:
-- HTML
-- CSS
+- HTML;
+- CSS;
 - Vanilla JS
 
 ### Autor
