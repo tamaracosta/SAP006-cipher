@@ -28,5 +28,5 @@ O usuário(a) pode colocar seus dados ou denunciar de forma anônima outra víti
 - CSS;
 - Vanilla JS
 
-### Autor
+### Autora
 - [@tamaracosta](https://www.github.com/tamaracosta)
