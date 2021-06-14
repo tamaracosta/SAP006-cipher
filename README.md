@@ -16,7 +16,7 @@ Devido as perseguições que muitas mulheres sofrem com instalações desconheci
 ## Como funciona?
 O usuário(a) pode colocar seus dados ou denunciar de forma anônima outra vítima, escrevendo a mensagem e escolhendo a chave criptografada, tanto positiva quanto negativa.
 
-![GIF Denunsédio](https://raw.githubusercontent.com/tamaracosta/SAP006-cipher/main/src/video-denunsedio.gif)
+![GIF Denunsédio](https://raw.githubusercontent.com/tamaracosta/SAP006-cipher/da56d89cf3f5f9e076336285bb36d1d9bbdcf436/src/GIF/denunsedio-video.gif)
 
 ### Criptografia e Descriptografia
 - Letras Minúsculas e Maiúsculas;
