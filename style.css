@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C4D8CB;
+    color: #3b5a48;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#titulo-principal {
+    color:rgb(231, 145, 171);
+}
+
+header {
+    background-color: #3b5a48;
+    padding: 20px;
+}
+
+h2 {
+    color: #e5e5e5;
+    margin-top: 15px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#formulario {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin: 7px 0;
+}
+
+input {
+    width: 300px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(231, 145, 171);
+}
+
+#denunciaAnonima {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#anonima {
+    width: 60px;
+}
+
+.escolha-chave {
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#botao-criptografar, #botao-enviar {
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(245, 99, 179);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+       
+}
+
+#botao-criptografar:hover, #botao-enviar:hover{
+    background-color: white;
+    color: rgb(245, 99, 179);
+}
+
+#botao-descriptografar {
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(245, 99, 179);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#botao-descriptografar:hover {
+    background-color: rgb(245, 99, 179);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#linkedin, #github, #instagram {
+    font-size: 20px;
+    color:rgb(245, 99, 179);
+    margin-left: 5px;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 0 20px 20px 0;
+}
