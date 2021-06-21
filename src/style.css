@@ -45,10 +45,12 @@ input {
     width: 300px;
     font-size: 20px;
     border-radius: 5px;
+    padding: 5px;
 }
 
 textarea {
     border-radius: 5px;
+    padding: 5px;
 }
 
 input:focus, textarea:focus {
